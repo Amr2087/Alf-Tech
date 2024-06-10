@@ -2,7 +2,7 @@ import streamlit as st
 import firebase_admin
 from firebase_admin import firestore, credentials, auth
 import hashlib
-
+import json
 # Page configuration
 st.set_page_config(
     initial_sidebar_state='expanded',
@@ -10,9 +10,11 @@ st.set_page_config(
 page_icon='icons/alftech.jpg'
 )
 
+firebase_json_content = st.secrets["firebase"]["json_content"]
+firebase_config = json.loads(firebase_json_content)
 # Initialize Firebase app (if not already initialized)
 if not firebase_admin._apps:
-    cred = credentials.Certificate(st.secrets["firebase"]["json_content"])
+    cred = credentials.Certificate('alftech-dada2-a42e24ca6b05.json')
     firebase_admin.initialize_app(cred)
 db = firestore.client()
 
