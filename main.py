@@ -13,8 +13,7 @@ st.set_page_config(layout='wide',
                    page_title='Alf Tech',
                    page_icon='icons/alftech.jpg'
                    )
-firebase_json_content = st.secrets["firebase"]["json_content"]
-firebase_config = json.loads(firebase_json_content)
+
 # Initialize Firebase app (if not already initialized)
 if not firebase_admin._apps:
     cred = credentials.Certificate('alftech-dada2-a42e24ca6b05.json')
