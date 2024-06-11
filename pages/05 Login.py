@@ -3,13 +3,13 @@ import firebase_admin
 from firebase_admin import firestore, credentials, auth
 import hashlib
 import json
+
 # Page configuration
 st.set_page_config(
     initial_sidebar_state='expanded',
     page_title='Login / Register',
-page_icon='icons/alftech.jpg'
+    page_icon='icons/alftech.jpg'
 )
-
 
 # Initialize Firebase app (if not already initialized)
 if not firebase_admin._apps:
@@ -17,15 +17,16 @@ if not firebase_admin._apps:
     firebase_admin.initialize_app(cred)
 db = firestore.client()
 
-
 # Sidebar configuration
 with st.sidebar:
     st.sidebar.title('Login / Register')
     with st.expander("Languages / اللغة"):
         st.session_state.language = st.radio('Choose Language / اختر لغة', options=['English', 'عربي'])
+        index = 0 if st.session_state.language == 'English' else 1
 
 # Language handling
 if st.session_state.language == 'English':
+    st.session_state.language = 'English'
     main = "Ask!"
     how = "How to use Alf Tech"
     tips = "Tech Tips & Tricks"
@@ -51,6 +52,7 @@ if st.session_state.language == 'English':
     welcome = "Welcome to Alf Tech!"
     out = "Logout"
 else:
+    st.session_state.language = 'عربي'
     main = "أسأل"
     tips = "نصائح وحيل تقنية"
     how = "ازاي تستخدم الف تك؟"
@@ -83,16 +85,16 @@ st.sidebar.page_link("pages/02 Tips.py", label=tips)
 st.sidebar.page_link("pages/03 2lf.py", label=franco)
 st.sidebar.page_link("pages/04 Setting.py", label=setting_new)
 st.sidebar.page_link("pages/05 Login.py", label=log)
-st.sidebar.page_link("pages/06 History.py", label= hist)
+st.sidebar.page_link("pages/06 History.py", label=hist)
 
 
 # Hashing function for passwords
 def hash_password(password):
     return hashlib.sha256(password.encode()).hexdigest()
 
+
 # Functions for signup and login
 def signup():
-
     st.title(signup_title_)
     email = st.text_input(email_title)
     password = st.text_input(password_title, type="password")
@@ -164,13 +166,13 @@ def login():
         st.session_state.page = 'signup'
 
 
-
 def check_login():
     if "user_info" in st.session_state:
         user_info = st.session_state.user_info
         # st.success(f"Welcome back, {user_info['name']}!")
         return True
     return False
+
 
 # Initialize the page state
 if 'page' not in st.session_state:

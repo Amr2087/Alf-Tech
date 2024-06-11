@@ -3,7 +3,7 @@ from streamlit_option_menu import option_menu
 
 st.set_page_config(
     initial_sidebar_state='expanded',
-    page_title='Tips & Tricks',
+    page_title='Setting Up New Devices',
     page_icon='icons/alftech.jpg'
 )
 
@@ -57,379 +57,293 @@ selected = option_menu(
     orientation='horizontal'
 )
 
-android_setting_en = ("""# Tips & Tricks for Android Device Optimization
+android_setting_en = ("""# Setting Up a New Android Device
 
-## 1. Use Google Assistant
-Activate Google Assistant by saying "Hey Google" or holding the home button. It can help with setting reminders, sending texts, or searching the web.
+## 1. Power On and Initial Setup
+1. **Power On**: Press and hold the power button to turn on the device.
+2. **Select Language**: Choose your preferred language.
+3. **Connect to Wi-Fi**: Select a Wi-Fi network and enter the password to connect.
 
-## 2. Customizable Home Screen
-Long-press on your home screen to access widgets and wallpaper settings. Arrange your most-used apps for easy access.
+## 2. Account Setup
+1. **Google Account**: Sign in with your Google account. If you don't have one, you can create a new account.
+2. **Backup and Restore**: Choose to restore your apps and data from a previous backup if available.
 
-## 3. Quick Settings Menu
-Swipe down from the top of the screen to access the Quick Settings menu. You can quickly toggle Wi-Fi, Bluetooth, flashlight, and more.
+## 3. Set Up Security Options
+1. **Screen Lock**: Set up a screen lock method (PIN, pattern, or password).
+2. **Biometric Authentication**: If supported, set up fingerprint or face recognition.
 
-## 4. Battery Saver Mode
-Activate Battery Saver mode from the Quick Settings menu or in Settings > Battery to extend battery life.
+## 4. Google Services
+1. **Google Assistant**: Follow the prompts to set up Google Assistant.
+2. **Location Services**: Enable or disable location services according to your preference.
 
-## 5. Screen Brightness
-Adjust screen brightness manually from the Quick Settings menu to save battery or reduce eye strain.
+## 5. Install Essential Apps
+1. **Google Play Store**: Open the Play Store and sign in if required.
+2. **Download Apps**: Download and install essential apps such as browsers, social media, communication, and productivity tools.
 
-## 6. Do Not Disturb Mode
-Turn on Do Not Disturb mode from the Quick Settings menu or Settings > Sound to silence notifications during meetings or sleep.
+## 6. Customize Your Device
+1. **Home Screen**: Arrange your home screen, add widgets, and set a wallpaper.
+2. **Notification Settings**: Customize notification settings for apps.
 
-## 7. Manage Notifications
-Customize app notifications in Settings > Apps & notifications. You can choose which apps can send notifications and how they appear.
+## 7. Set Up Backup
+1. **Google Backup**: Ensure that Google Backup is enabled to back up your data regularly.
+2. **External Backup**: Consider using additional backup options like cloud storage or external drives.
 
-## 8. App Drawer
-Swipe up from the bottom of the screen to access the App Drawer, where all your apps are listed.
+## 8. Explore Features and Settings
+1. **System Updates**: Check for and install any available system updates.
+2. **Device Settings**: Explore other settings such as display, sound, and accessibility options.
 
-## 9. Use Search Bar
-Use the search bar at the top of the App Drawer to quickly find apps or contacts.
-
-## 10. Split Screen Mode
-Open two apps simultaneously by using split-screen mode. Open an app, then long-press the recent apps button and select another app.
-
-## 11. Clear App Cache
-Speed up your phone by clearing app cache in Settings > Storage > Cached data.
-
-## 12. Secure Your Phone
-Set up a PIN, password, or fingerprint for security in Settings > Security.
-
-## 13. Find My Device
-Enable Find My Device in Settings > Security to locate your phone if it's lost or stolen.
-
-## 14. Backup Your Data
-Use Google Backup in Settings > System > Backup to regularly back up your contacts, photos, and app data.
-
-## 15. Install a Launcher
-Customize your phone’s appearance and functionality with a third-party launcher like Nova Launcher from the Google Play Store.
-
-## 16. Use a File Manager
-Access your files easily with a file manager app like Google Files, which also helps clean up unnecessary files.
-
-## 17. Voice Typing
-Use Google Voice Typing by tapping the microphone icon on the keyboard to dictate text instead of typing.
-
-## 18. Magnification Gestures
-Enable magnification gestures in Settings > Accessibility to zoom in on any part of the screen.
-
-## 19. Reduce Data Usage
-Enable Data Saver in Settings > Network & Internet to reduce background data usage.
-
-## 20. Google Photos
-Use Google Photos for automatic photo backup and easy photo organization.
-follow the same sizing as this""")
-android_setting_ar = ("""# نصائح وحيل لتحسين أجهزة الأندرويد
-
-## 1. استخدم مساعد Google
-قم بتنشيط مساعد Google عبر القول "مرحبًا جوجل" أو الضغط على زر الصفحة الرئيسية. يمكن أن يساعدك في ضبط تذكيراتك، وإرسال الرسائل النصية، أو البحث على الويب.
-
-## 2. الشاشة الرئيسية قابلة للتخصيص
-اضغط باستمرار على شاشة الصفحة الرئيسية للوصول إلى الودجت وإعدادات الخلفية. قم بترتيب التطبيقات التي تستخدمها بشكل متكرر لسهولة الوصول.
-
-## 3. قائمة الإعدادات السريعة
-اسحب للأسفل من أعلى الشاشة للوصول إلى قائمة الإعدادات السريعة. يمكنك التبديل بسرعة لشبكة الواي فاي، البلوتوث، الفلاش، وغيرها.
-
-## 4. وضع توفير الطاقة
-قم بتنشيط وضع توفير الطاقة من قائمة الإعدادات السريعة أو في الإعدادات > البطارية لتمديد عمر البطارية.
-
-## 5. سطوع الشاشة
-قم بضبط سطوع الشاشة يدويًا من قائمة الإعدادات السريعة لتوفير البطارية أو للحد من إجهاد العين.
-
-## 6. وضع عدم الإزعاج
-قم بتشغيل وضع عدم الإزعاج من قائمة الإعدادات السريعة أو الإعدادات > الصوت لكتم الإشعارات أثناء الاجتماعات أو النوم.
-
-## 7. إدارة الإشعارات
-قم بتخصيص إشعارات التطبيقات في الإعدادات > التطبيقات والإشعارات. يمكنك اختيار التطبيقات التي يمكنها إرسال الإشعارات وكيفية ظهورها.
-
-## 8. درج التطبيقات
-اسحب لأعلى من أسفل الشاشة للوصول إلى درج التطبيقات، حيث تُدرج جميع تطبيقاتك.
-
-## 9. استخدم شريط البحث
-استخدم شريط البحث في أعلى درج التطبيقات للعثور بسرعة على التطبيقات أو جهات الاتصال.
-
-## 10. وضع الشاشة المقسمة
-افتح تطبيقين بشكل متزامن باستخدام وضع الشاشة المقسمة. افتح تطبيقًا، ثم اضغط باستمرار على زر التطبيقات الأخيرة وحدد تطبيقًا آخر.
-
-## 11. مسح ذاكرة التخزين المؤقت للتطبيقات
-قم بتسريع هاتفك عن طريق مسح ذاكرة التخزين المؤقت للتطبيقات في الإعدادات > التخزين > البيانات المؤقتة.
-
-## 12. أمن هاتفك
-قم بتعيين رقم سري، كلمة مرور، أو بصمة للأمان في الإعدادات > الأمان.
-
-## 13. العثور على هاتفك
-قم بتمكين العثور على جهازك في الإعدادات > الأمان للعثور على هاتفك إذا كان مفقودًا أو مسروقًا.
-
-## 14. احتياطي البيانات الخاصة بك
-استخدم نسخ احتياطي Google في الإعدادات > النظام > النسخ الاحتياطي للنسخ الاحتياطي الدوري لجهات الاتصال، الصور، وبيانات التطبيقات.
-
-## 15. تثبيت مشغل
-قم بتخصيص مظهر ووظائف هاتفك باستخدام مشغل طرف ثالث مثل Nova Launcher من متجر Google Play.
-
-## 16. استخدم مدير الملفات
-قم بالوصول إلى ملفاتك بسهولة باستخدام تطبيق مدير الملفات مثل Google Files، الذي يساعد أيضًا في تنظيف الملفات غير الضرورية.
-
-## 17. الكتابة الصوتية
-استخدم الكتابة الصوتية من Google عن طريق الضغط على أيقونة الميكروفون على لوحة المفاتيح لنطق النص بدلاً من كتابته.
-
-## 18. الإيماءات للتكبير
-قم بتمكين إيماءات التكبير في الإعدادات > الإمكانيات > التكبير للتكبير في أي جزء من الشاشة.
-
-## 19. تقليل استخدام البيانات
-قم بتمكين وضع توفير البيانات في الإعدادات > الشبكة والإنترنت لتقليل استخدام البيانات الخلفية.
-
-## 20. صور جوجل
-استخدم صور جوجل للنسخ الاحتياطي التلقائي للصور وتنظيمها بسهولة.
-
+## Conclusion
+By following these steps, your new Android device should be set up, secure, and personalized to your needs. If you encounter any issues, refer to the device’s manual or search online for solutions. Enjoy your new device!
 """)
-windows_setting_en = ("""# Tips & Tricks for Windows Optimization
+android_setting_ar = ("""# إعداد جهاز أندرويد جديد
 
-## 1. Keyboard Shortcuts
-Learn common keyboard shortcuts like Ctrl+C (copy), Ctrl+V (paste), and Win+D (show desktop).
+## 1. التشغيل والإعداد الأولي
+1. **تشغيل الجهاز**: اضغط مع الاستمرار على زر الطاقة لتشغيل الجهاز.
+2. **اختيار اللغة**: اختر اللغة المفضلة.
+3. **الاتصال بشبكة Wi-Fi**: اختر شبكة Wi-Fi وأدخل كلمة المرور للاتصال.
 
-## 2. Taskbar Customization
-Right-click on the taskbar to customize it, including hiding or showing icons, resizing, and more.
+## 2. إعداد الحساب
+1. **حساب جوجل**: سجل الدخول باستخدام حساب جوجل الخاص بك. إذا لم يكن لديك حساب، يمكنك إنشاء حساب جديد.
+2. **النسخ الاحتياطي والاستعادة**: اختر استعادة التطبيقات والبيانات من نسخة احتياطية سابقة إذا كانت متوفرة.
 
-## 3. File Explorer Tricks
-Use Ctrl + Scroll to zoom in or out in File Explorer for better readability.
+## 3. إعداد خيارات الأمان
+1. **قفل الشاشة**: قم بإعداد طريقة قفل الشاشة (رقم سري، نمط، أو كلمة مرور).
+2. **المصادقة البيومترية**: إذا كان مدعومًا، قم بإعداد بصمة الإصبع أو التعرف على الوجه.
 
-## 4. Snap Windows
-Drag windows to the edge of the screen to automatically resize and snap them to that side.
+## 4. خدمات جوجل
+1. **مساعد جوجل**: اتبع الإرشادات لإعداد مساعد جوجل.
+2. **خدمات الموقع**: قم بتمكين أو تعطيل خدمات الموقع وفقًا لتفضيلاتك.
 
-## 5. Virtual Desktops
-Organize your work by using virtual desktops. Press Win+Tab to access Task View and create multiple desktops.
+## 5. تثبيت التطبيقات الأساسية
+1. **متجر جوجل بلاي**: افتح متجر بلاي وسجل الدخول إذا لزم الأمر.
+2. **تحميل التطبيقات**: قم بتحميل وتثبيت التطبيقات الأساسية مثل المتصفحات، وسائل التواصل الاجتماعي، تطبيقات الاتصال، وأدوات الإنتاجية.
 
-## 6. Night Light
-Reduce eye strain by enabling Night Light in Settings > System > Display.
+## 6. تخصيص جهازك
+1. **الشاشة الرئيسية**: قم بترتيب الشاشة الرئيسية، إضافة الأدوات، وتعيين خلفية.
+2. **إعدادات الإشعارات**: تخصيص إعدادات الإشعارات للتطبيقات.
 
-## 7. Search Everywhere
-Use Win+S to quickly search for apps, files, and settings.
+## 7. إعداد النسخ الاحتياطي
+1. **نسخ جوجل الاحتياطي**: تأكد من تفعيل نسخ جوجل الاحتياطي لنسخ بياناتك بانتظام.
+2. **النسخ الاحتياطي الخارجي**: استخدم خيارات النسخ الاحتياطي الإضافية مثل التخزين السحابي أو الأقراص الخارجية.
 
-## 8. Task Manager
-Press Ctrl+Shift+Esc to open Task Manager. It's your go-to tool for monitoring and managing processes.
+## 8. استكشاف الميزات والإعدادات
+1. **تحديثات النظام**: تحقق من وجود تحديثات للنظام وقم بتثبيتها إذا كانت متوفرة.
+2. **إعدادات الجهاز**: استكشاف إعدادات أخرى مثل العرض، الصوت، وخيارات الوصول.
 
-## 9. Windows Terminal
-Upgrade your command-line experience with Windows Terminal, available in the Microsoft Store.
-
-## 10. PowerToys
-Install PowerToys to enhance productivity with features like FancyZones for window management.
-
-## 11. Customize Start Menu
-Right-click on the Start menu to customize it, including adding or removing tiles and folders.
-
-## 12. Game Mode
-Improve gaming performance by enabling Game Mode in Settings > Gaming.
-
-## 13. Dictation
-Use Win+H to open the built-in dictation tool for hands-free typing.
-
-## 14. Remote Desktop
-Access your PC remotely by enabling Remote Desktop in Settings > System > Remote Desktop.
-
-## 15. Clipboard History
-Press Win+V to access Clipboard History and easily paste previously copied items.
-
-## 16. Storage Sense
-Free up disk space by enabling Storage Sense in Settings > System > Storage.
-
-## 17. Privacy Settings
-Review and customize your privacy settings in Settings > Privacy for better control over your data.
-
-## 18. Focus Assist
-Minimize distractions by enabling Focus Assist in Settings > System > Focus Assist.
-
-## 19. Backup and Restore
-Set up regular backups using Windows Backup or a third-party solution to protect your data.
-
-## 20. Windows Updates
-Stay up-to-date with the latest features and security patches by regularly checking for Windows Updates.
+## الخاتمة
+باتباع هذه الخطوات، يجب أن يكون جهاز الأندرويد الجديد مجهزًا، آمنًا، ومخصصًا لاحتياجاتك. إذا واجهت أي مشكلات، يمكنك الرجوع إلى دليل الجهاز أو البحث عبر الإنترنت عن الحلول. استمتع بجهازك الجديد!
 """)
-windows_setting_ar = ("""# نصائح وحيل لتحسين نظام ويندوز
+windows_setting_en = ("""# Setting Up a New Windows Device
 
-## 1. اختصارات لوحة المفاتيح
-تعلم اختصارات لوحة المفاتيح الشائعة مثل Ctrl+C (نسخ)، Ctrl+V (لصق)، وWin+D (عرض سطح المكتب).
+## 1. Initial Setup and Configuration
+1. **Power On**: Turn on the device and follow the on-screen instructions.
+2. **Select Region and Language**: Choose the appropriate region and language settings.
+3. **Network Connection**: Connect to Wi-Fi or a wired network to ensure internet access for updates and account setup.
+4. **Account Setup**:
+    - **Microsoft Account**: Sign in with a Microsoft account for access to cloud services, apps, and more.
+    - **Local Account**: Alternatively, set up a local account if preferred.
 
-## 2. تخصيص شريط المهام
-انقر بزر الماوس الأيمن على شريط المهام لتخصيصه، بما في ذلك إخفاء أو إظهار الأيقونات، تغيير الحجم، والمزيد.
+## 2. Update Windows
+1. **Check for Updates**: Go to **Settings > Update & Security > Windows Update** and click on **Check for updates**. Install all available updates to ensure the system is secure and up-to-date.
 
-## 3. حيل مستكشف الملفات
-استخدم Ctrl + Scroll للتكبير أو التصغير في مستكشف الملفات لتحسين القراءة.
+## 3. Install Essential Software
+1. **Web Browser**: Install preferred browsers like Google Chrome, Firefox, or Microsoft Edge.
+2. **Security Software**: Ensure Windows Defender is active or install another antivirus program if preferred.
+3. **Productivity Tools**: Install necessary productivity tools such as Microsoft Office, Adobe Reader, etc.
+4. **Communication Apps**: Install apps like Zoom, Skype, or Teams for video calls and communication.
 
-## 4. تثبيت النوافذ
-اسحب النوافذ إلى حافة الشاشة لتغيير حجمها وتثبيتها تلقائيًا إلى ذلك الجانب.
+## 4. Personalization
+1. **Background and Theme**: Customize the desktop background, theme, and colors. This can be done via **Settings > Personalization**.
+2. **Taskbar and Start Menu**: Pin frequently used apps to the taskbar and organize the Start menu.
 
-## 5. سطح المكتب الافتراضي
-نظم عملك باستخدام أسطح المكتب الافتراضية. اضغط Win+Tab للوصول إلى عرض المهام وإنشاء عدة أسطح مكتب.
+## 5. Set Up Backup
+1. **OneDrive**: Set up OneDrive to automatically back up important files to the cloud.
+2. **External Backup**: Use an external hard drive for additional backups via **Settings > Update & Security > Backup**.
 
-## 6. إضاءة الليل
-قلل من إجهاد العين عن طريق تمكين إضاءة الليل في الإعدادات > النظام > العرض.
+## 6. Configure Privacy Settings
+1. **Privacy Options**: Go to **Settings > Privacy** and adjust privacy settings according to preference, including location services, microphone, camera access, etc.
 
-## 7. البحث في كل مكان
-استخدم Win+S للبحث بسرعة عن التطبيقات والملفات والإعدادات.
+## 7. Device Security
+1. **Password or PIN**: Set up a strong password or PIN for logging in.
+2. **Windows Hello**: If supported, configure Windows Hello for fingerprint or facial recognition login.
+3. **BitLocker**: Enable BitLocker for additional security if the device supports it.
 
-## 8. مدير المهام
-اضغط Ctrl+Shift+Esc لفتح مدير المهام. إنه أداتك الأساسية لمراقبة وإدارة العمليات.
+## 8. Install Additional Drivers
+1. **Device Manager**: Check the Device Manager for any missing drivers or hardware that requires additional drivers.
 
-## 9. محطة ويندوز
-حسن تجربة سطر الأوامر مع محطة ويندوز، المتاحة في متجر مايكروسوفت.
+## 9. Familiarization
+1. **Explore Windows Features**: Spend some time exploring features like Cortana, Task View, virtual desktops, and the Microsoft Store.
+2. **Learn Keyboard Shortcuts**: Learning basic keyboard shortcuts can improve efficiency.
 
-## 10. أدوات PowerToys
-قم بتثبيت أدوات PowerToys لتعزيز الإنتاجية مع ميزات مثل FancyZones لإدارة النوافذ.
+## 10. Set Up Email and Apps
+1. **Email Client**: Set up email accounts in the preferred email client (Outlook, Mail app, etc.).
+2. **Download Apps**: Download any additional apps or software your grandpa might need from the Microsoft Store or other trusted sources.
 
-## 11. تخصيص قائمة البدء
-انقر بزر الماوس الأيمن على قائمة البدء لتخصيصها، بما في ذلك إضافة أو إزالة المربعات والمجلدات.
+## 11. Parental Controls (if needed)
+1. **Family Safety**: If there are younger users, set up family safety and parental controls through **Settings > Accounts > Family & other users**.
 
-## 12. وضع الألعاب
-حسن أداء الألعاب عن طريق تمكين وضع الألعاب في الإعدادات > الألعاب.
+## 12. Maintenance Tips
+1. **Regular Updates**: Ensure that the device checks for and installs updates regularly.
+2. **Disk Cleanup**: Use built-in tools like Disk Cleanup to free up space.
+3. **Performance Monitoring**: Keep an eye on performance via Task Manager and take steps to manage startup programs and services.
 
-## 13. الإملاء
-استخدم Win+H لفتح أداة الإملاء المدمجة للكتابة بدون استخدام اليدين.
-
-## 14. سطح المكتب البعيد
-الوصول إلى جهاز الكمبيوتر الخاص بك عن بُعد عن طريق تمكين سطح المكتب البعيد في الإعدادات > النظام > سطح المكتب البعيد.
-
-## 15. سجل الحافظة
-اضغط Win+V للوصول إلى سجل الحافظة ولصق العناصر المنسوخة سابقًا بسهولة.
-
-## 16. استشعار التخزين
-حرر مساحة على القرص عن طريق تمكين استشعار التخزين في الإعدادات > النظام > التخزين.
-
-## 17. إعدادات الخصوصية
-راجع وخصص إعدادات الخصوصية الخاصة بك في الإعدادات > الخصوصية للحصول على تحكم أفضل في بياناتك.
-
-## 18. مساعد التركيز
-قلل من التشتت عن طريق تمكين مساعد التركيز في الإعدادات > النظام > مساعد التركيز.
-
-## 19. النسخ الاحتياطي والاستعادة
-قم بإعداد نسخ احتياطية منتظمة باستخدام النسخ الاحتياطي لنظام ويندوز أو حل تابع لجهة خارجية لحماية بياناتك.
-
-## 20. تحديثات ويندوز
-ابقَ على اطلاع بأحدث الميزات والتحديثات الأمنية عن طريق التحقق بانتظام من تحديثات ويندوز.
+## Conclusion
+By following these steps, your grandpa's new Windows device should be well set up, secure, and personalized to his needs. If he encounters any issues, many solutions can be found through the built-in Windows Help or by searching online. Enjoy the new device!
 """)
-ios_setting_en = ("""# Tips & Tricks for iOS Optimization
+windows_setting_ar = ("""# إعداد جهاز ويندوز جديد
 
-## 1. Siri Shortcuts
-Use Siri Shortcuts to automate tasks and streamline your workflow. You can create custom voice commands to perform specific actions.
+## 1. الإعداد والتكوين الأولي
+1. **تشغيل الجهاز**: قم بتشغيل الجهاز واتبع التعليمات التي تظهر على الشاشة.
+2. **اختيار المنطقة واللغة**: اختر إعدادات المنطقة واللغة المناسبة.
+3. **الاتصال بالشبكة**: اتصل بشبكة Wi-Fi أو شبكة سلكية لضمان الوصول إلى الإنترنت لتحديثات الحساب والإعدادات.
+4. **إعداد الحساب**:
+    - **حساب مايكروسوفت**: سجل الدخول باستخدام حساب مايكروسوفت للوصول إلى الخدمات السحابية والتطبيقات والمزيد.
+    - **حساب محلي**: بدلاً من ذلك، قم بإعداد حساب محلي إذا كان مفضلاً.
 
-## 2. Customize Home Screen
-Long-press on the home screen to enter jiggle mode. From there, you can rearrange apps, create folders, and add widgets for quick access to information.
+## 2. تحديث ويندوز
+1. **التحقق من التحديثات**: اذهب إلى **الإعدادات > التحديث والأمان > تحديث ويندوز** وانقر على **التحقق من وجود تحديثات**. قم بتثبيت جميع التحديثات المتاحة لضمان أن النظام آمن ومحدث.
 
-## 3. Control Center
-Swipe down from the top-right corner of the screen to access Control Center. From here, you can toggle various settings like Wi-Fi, Bluetooth, and screen brightness.
+## 3. تثبيت البرامج الأساسية
+1. **متصفح الإنترنت**: قم بتثبيت المتصفحات المفضلة مثل Google Chrome أو Firefox أو Microsoft Edge.
+2. **برنامج الأمان**: تأكد من تفعيل Windows Defender أو قم بتثبيت برنامج مضاد للفيروسات إذا كان مفضلاً.
+3. **أدوات الإنتاجية**: قم بتثبيت أدوات الإنتاجية الضرورية مثل Microsoft Office و Adobe Reader، إلخ.
+4. **تطبيقات الاتصال**: قم بتثبيت تطبيقات مثل Zoom أو Skype أو Teams للمكالمات الفيديو والتواصل.
 
-## 4. Low Power Mode
-Activate Low Power Mode to conserve battery life when your device's battery is running low. You can enable it from Control Center or in Settings > Battery.
+## 4. التخصيص
+1. **خلفية وثيم**: قم بتخصيص خلفية سطح المكتب والثيم والألوان. يمكن القيام بذلك عبر **الإعدادات > التخصيص**.
+2. **شريط المهام وقائمة ابدأ**: قم بتثبيت التطبيقات المستخدمة بشكل متكرر على شريط المهام وتنظيم قائمة ابدأ.
 
-## 5. Display & Brightness
-Adjust screen brightness and enable Night Shift mode to reduce eye strain, especially at night. You can customize these settings in Settings > Display & Brightness.
+## 5. إعداد النسخ الاحتياطي
+1. **OneDrive**: قم بإعداد OneDrive للنسخ الاحتياطي التلقائي للملفات الهامة إلى السحابة.
+2. **النسخ الاحتياطي الخارجي**: استخدم قرص صلب خارجي للنسخ الاحتياطي الإضافي عبر **الإعدادات > التحديث والأمان > النسخ الاحتياطي**.
 
-## 6. Do Not Disturb
-Turn on Do Not Disturb mode to silence calls, notifications, and alerts. You can schedule it to activate during specific times or manually enable it from Control Center.
+## 6. تكوين إعدادات الخصوصية
+1. **خيارات الخصوصية**: اذهب إلى **الإعدادات > الخصوصية** واضبط إعدادات الخصوصية وفقًا للتفضيلات، بما في ذلك خدمات الموقع والوصول إلى الميكروفون والكاميرا، إلخ.
 
-## 7. Notifications
-Manage app notifications in Settings > Notifications. You can customize how notifications appear, including banners, alerts, or none at all.
+## 7. أمان الجهاز
+1. **كلمة المرور أو الرقم السري**: قم بإعداد كلمة مرور قوية أو رقم سري لتسجيل الدخول.
+2. **Windows Hello**: إذا كان مدعومًا، قم بتكوين Windows Hello لتسجيل الدخول باستخدام بصمة الإصبع أو التعرف على الوجه.
+3. **BitLocker**: قم بتمكين BitLocker لأمان إضافي إذا كان الجهاز يدعمه.
 
-## 8. App Library
-Swipe right on the home screen to access the App Library, where all your installed apps are automatically organized into categories for easier navigation.
+## 8. تثبيت التعريفات الإضافية
+1. **مدير الجهاز**: تحقق من مدير الجهاز لأي تعريفات مفقودة أو أجهزة تتطلب تعريفات إضافية.
 
-## 9. Spotlight Search
-Swipe down from the middle of the home screen to access Spotlight Search. You can quickly search for apps, contacts, messages, and more.
+## 9. التعرف على النظام
+1. **استكشاف ميزات ويندوز**: اقض بعض الوقت في استكشاف ميزات مثل Cortana و Task View وسطح المكتب الافتراضي ومتجر مايكروسوفت.
+2. **تعلم اختصارات لوحة المفاتيح**: تعلم اختصارات لوحة المفاتيح الأساسية يمكن أن يحسن الكفاءة.
 
-## 10. Split View & Slide Over
-On iPad, use Split View to multitask by running two apps side by side, or use Slide Over to quickly access a second app without leaving the first one.
+## 10. إعداد البريد الإلكتروني والتطبيقات
+1. **عميل البريد الإلكتروني**: قم بإعداد حسابات البريد الإلكتروني في عميل البريد المفضل (Outlook أو تطبيق البريد، إلخ).
+2. **تحميل التطبيقات**: قم بتحميل أي تطبيقات أو برامج إضافية قد يحتاجها جدك من متجر مايكروسوفت أو مصادر موثوقة أخرى.
 
-## 11. Clear App Cache
-Speed up your device by clearing app cache in Settings > General > iPhone/iPad Storage. You can offload unused apps and delete app data to free up space.
+## 11. التحكم الأبوي (إذا لزم الأمر)
+1. **سلامة العائلة**: إذا كان هناك مستخدمون صغار، قم بإعداد سلامة العائلة والتحكم الأبوي عبر **الإعدادات > الحسابات > العائلة والمستخدمون الآخرون**.
 
-## 12. Face ID/Touch ID
-Secure your device with Face ID or Touch ID. You can set up these biometric authentication methods in Settings > Face ID & Passcode or Touch ID & Passcode.
+## 12. نصائح الصيانة
+1. **التحديثات المنتظمة**: تأكد من أن الجهاز يتحقق من ويثبت التحديثات بانتظام.
+2. **تنظيف القرص**: استخدم الأدوات المدمجة مثل تنظيف القرص لتحرير المساحة.
+3. **مراقبة الأداء**: راقب الأداء عبر مدير المهام واتخذ الخطوات لإدارة البرامج والخدمات التي تبدأ مع التشغيل.
 
-## 13. Find My iPhone/iPad
-Enable Find My iPhone/iPad in Settings > [Your Name] > Find My to locate your device if it's lost or stolen. You can also remotely lock or erase your device for added security.
-
-## 14. iCloud Backup
-Automatically back up your device to iCloud to ensure your data is safe and easily recoverable. You can enable iCloud Backup in Settings > [Your Name] > iCloud > iCloud Backup.
-
-## 15. Install a Launcher
-Customize your device's appearance and functionality with third-party launchers from the App Store. These launchers offer additional customization options beyond the default iOS experience.
-
-## 16. Use Files App
-Access and manage your files with the Files app. You can organize documents, photos, and videos stored on your device or in iCloud Drive.
-
-## 17. Siri Dictation
-Use Siri Dictation to transcribe your voice into text. You can enable it by tapping the microphone icon on the keyboard and speaking your message.
-
-## 18. Magnifier
-Turn your device into a magnifying glass with the Magnifier feature. You can enable it in Settings > Accessibility > Magnifier and triple-click the side button to activate it.
-
-## 19. Reduce Data Usage
-Limit background data usage and conserve cellular data by enabling Low Data Mode in Settings > Cellular or by restricting app access to cellular data.
-
-## 20. Apple Photos
-Organize and edit your photos with the built-in Apple Photos app. You can create albums, apply filters, and share your memories with friends and family.
+## الخاتمة
+باتباع هذه الخطوات، يجب أن يكون جهاز ويندوز الجديد لجدك مجهزًا بشكل جيد وآمن ومخصص لاحتياجاته. إذا واجه أي مشكلات، يمكن العثور على العديد من الحلول من خلال مساعدة ويندوز المدمجة أو البحث عبر الإنترنت. استمتع بالجهاز الجديد!
 """)
-ios_setting_ar = ("""# نصائح وحيل لتحسين نظام iOS
+ios_setting_en = ("""# Setting Up a New iOS Device
 
-## 1. اختصارات Siri
-استخدم اختصارات Siri لتتمكن من أتمتة المهام وتسهيل سير عملك. يمكنك إنشاء أوامر صوتية مخصصة لأداء أفعال محددة.
+## 1. Power On and Initial Setup
+1. **Power On**: Press and hold the power button to turn on the device.
+2. **Language and Region**: Select your preferred language and region.
+3. **Quick Start**: If you have another iOS device running iOS 11 or later, use Quick Start to transfer settings automatically. Place the devices close to each other and follow the instructions.
+4. **Manual Setup**: If you don't have another device, tap on "Set Up Manually" and follow the on-screen instructions.
 
-## 2. تخصيص شاشة البداية
-اضغط بشكل طويل على شاشة البداية للدخول إلى وضع الاهتزاز. من هناك، يمكنك إعادة ترتيب التطبيقات، وإنشاء مجلدات، وإضافة ويدجتات للوصول السريع إلى المعلومات.
+## 2. Network Connection
+1. **Wi-Fi**: Choose a Wi-Fi network and enter the password to connect.
+2. **Cellular Network**: If the device has a SIM card, you can set up the cellular network.
 
-## 3. مركز التحكم
-اسحب للأسفل من الزاوية العلوية اليمنى للشاشة للوصول إلى مركز التحكم. من هنا، يمكنك تبديل إعدادات مختلفة مثل الواي فاي، والبلوتوث، وسطوع الشاشة.
+## 3. Security Settings
+1. **Touch ID or Face ID**: Follow the instructions to set up Touch ID (fingerprint) or Face ID (facial recognition) for added security.
+2. **Passcode**: Create a passcode to secure your device.
 
-## 4. وضع الطاقة المنخفضة
-قم بتنشيط وضع الطاقة المنخفضة لتوفير عمر البطارية عندما تكون بطارية جهازك منخفضة. يمكنك تمكينه من مركز التحكم أو في الإعدادات > البطارية.
+## 4. Restore Data and Apps
+1. **Restore from Backup**: Choose to restore from an iCloud backup or an iTunes backup if available.
+2. **Move Data from Android**: Use the "Move to iOS" app to transfer data from an Android device.
+3. **Set Up as New**: Select "Set Up as New iPhone/iPad" if you want to start fresh without restoring any data.
 
-## 5. العرض والسطوع
-ضبط سطوع الشاشة وتمكين وضع التحول الليلي للحد من تعب العين، خاصة في الليل. يمكنك تخصيص هذه الإعدادات في الإعدادات > العرض والسطوع.
+## 5. Sign in to Apple ID
+1. **Apple ID**: Enter your Apple ID and password. If you don't have an Apple ID, you can create a new one.
+2. **iCloud**: Choose which iCloud services you want to use, such as Mail, Contacts, and Calendars.
 
-## 6. وضع عدم الإزعاج
-قم بتشغيل وضع عدم الإزعاج لكتم المكالمات والإشعارات والتنبيهات. يمكنك جدولته للتنشيط خلال أوقات محددة أو تمكينه يدويًا من مركز التحكم.
+## 6. Set Up Siri and Other Services
+1. **Siri**: Set up Siri, the voice assistant, by following the instructions.
+2. **Other Services**: Choose to enable or disable services such as Location Services, Analytics, Automatic Updates, etc.
 
-## 7. الإشعارات
-إدارة إشعارات التطبيقات في الإعدادات > الإشعارات. يمكنك تخصيص كيفية ظهور الإشعارات، بما في ذلك الشعارات والتنبيهات، أو عدم ظهورها على الإطلاق.
+## 7. Customize Your Device
+1. **Wallpaper**: Choose your preferred wallpaper.
+2. **Apps**: Download and install necessary apps from the App Store.
+3. **Other Settings**: Explore and adjust other settings such as Notifications, Do Not Disturb, Display & Brightness.
 
-## 8. مكتبة التطبيقات
-اسحب لليمين على شاشة البداية للوصول إلى مكتبة التطبيقات، حيث يتم تنظيم جميع التطبيقات المثبتة تلقائيًا في فئات لسهولة التصفح.
+## 8. Set Up Email and Accounts
+1. **Email**: Set up email accounts by going to **Settings > Mail > Accounts > Add Account**.
+2. **Other Accounts**: Add other accounts like Google, Facebook, or Microsoft.
 
-## 9. بحث Spotlight
-اسحب للأسفل من منتصف شاشة البداية للوصول إلى بحث Spotlight. يمكنك البحث بسرعة عن التطبيقات وجهات الاتصال والرسائل وأكثر من ذلك.
+## 9. Backup and Sync
+1. **iCloud Backup**: Ensure iCloud Backup is enabled by going to **Settings > [Your Name] > iCloud > iCloud Backup**.
+2. **iTunes Backup**: You can also create backups using iTunes if preferred.
 
-## 10. شاشة مقسمة وشريحة فوق
-على الآيباد، استخدم شاشة مقسمة للقيام بأكثر من مهمة من خلال تشغيل تطبيقين جنبًا إلى جنب، أو استخدم شريحة فوق للوصول السريع إلى تطبيق ثانٍ دون مغادرة التطبيق الأول.
+## 10. Explore Features and Get Familiar
+1. **New Features**: Explore the new features in iOS.
+2. **User Guide**: Visit Apple's website or use the "Tips" app for additional guidance.
 
-## 11. مسح ذاكرة التخزين المؤقت للتطبيقات
-قم بتسريع جهازك عن طريق مسح ذاكرة التخزين المؤقت للتطبيقات في الإعدادات > عام > التخزين على iPhone/iPad. يمكنك تفريغ التطبيقات غير المستخدمة وحذف بيانات التطبيق لتحرير مساحة.
+## Conclusion
+By following these steps, your grandpa's new iOS device should be well set up, secure, and personalized to his needs. If he encounters any issues, many solutions can be found through Apple's built-in Help or by searching online. Enjoy the new device!
+""")
+ios_setting_ar = ("""# إعداد جهاز iOS جديد
 
-## 12. Face ID/Touch ID
-حمي جهازك بـ Face ID أو Touch ID. يمكنك تعيين هذه الطرق للمصادقة البيومترية في الإعدادات > Face ID والرقم السري أو Touch ID والرقم السري.
+## 1. التشغيل والإعداد الأولي
+1. **التشغيل**: اضغط مع الاستمرار على زر الطاقة لتشغيل الجهاز.
+2. **الاختيار**: اختر اللغة والمنطقة المفضلتين.
+3. **البدء السريع**: إذا كان لديك جهاز iOS آخر يعمل بنظام iOS 11 أو أحدث، يمكنك استخدام ميزة البدء السريع لنقل الإعدادات تلقائيًا. ضع الأجهزة بالقرب من بعضها واتبع التعليمات.
+4. **التهيئة اليدوية**: إذا لم يكن لديك جهاز آخر، اضغط على "إعداد يدوي" واتبع التعليمات التي تظهر على الشاشة.
 
-## 13. البحث عن iPhone/iPad الخاص بي
-قم بتمكين البحث عن iPhone/iPad الخاص بي في الإعدادات > [اسمك] > البحث عني للعثور على جهازك في حالة فقده أو سرقته. يمكنك أيضًا قفل الجهاز أو مسحه عن بُعد لزيادة الأمان.
+## 2. الاتصال بالشبكة
+1. **Wi-Fi**: اختر شبكة Wi-Fi وأدخل كلمة المرور للاتصال.
+2. **شبكة خلوية**: إذا كان الجهاز يحتوي على بطاقة SIM، يمكنك إعداد الشبكة الخلوية.
 
-## 14. النسخ الاحتياطي في iCloud
-قم بعمل نسخ احتياطي لجهازك تلقائيًا في iCloud لضمان سلامة بياناتك وسهولة استرجاعها. يمكنك تمكين النسخ الاحتياطي في iCloud في الإعدادات > [اسمك] > iCloud > النسخ الاحتياطي في iCloud.
+## 3. إعدادات الأمان
+1. **Touch ID أو Face ID**: اتبع التعليمات لإعداد بصمة الإصبع (Touch ID) أو التعرف على الوجه (Face ID) لتحسين الأمان.
+2. **رمز المرور**: قم بإنشاء رمز مرور للوصول إلى الجهاز.
 
-## 15. تثبيت لانشر
-قم بتخصيص مظهر ووظائف جهازك باستخدام لانشرات من متجر التطبيقات. تقدم هذه اللانشرات خيارات تخصيص إضافية تتجاوز تجربة iOS الافتراضية.
+## 4. استعادة البيانات والتطبيقات
+1. **استعادة من نسخة احتياطية**: اختر الاستعادة من نسخة iCloud الاحتياطية أو نسخة iTunes الاحتياطية إذا كانت متوفرة.
+2. **النقل من Android**: استخدم تطبيق "Move to iOS" لنقل البيانات من جهاز Android.
+3. **إعداد جديد**: اختر "إعداد كجهاز جديد" إذا كنت تريد بدء استخدام الجهاز بدون استعادة أي بيانات.
 
-## 16. استخدام تطبيق الملفات
-استخدم تطبيق الملفات للوصول إلى وإدارة ملفاتك. يمكنك تنظيم المستندات والصور ومقاطع الفيديو المخزنة على جهازك أو في iCloud Drive.
+## 5. تسجيل الدخول إلى Apple ID
+1. **Apple ID**: أدخل معرف Apple وكلمة المرور. إذا لم يكن لديك معرف Apple، يمكنك إنشاء واحد جديد.
+2. **iCloud**: اختر الخدمات التي تريد استخدامها مع iCloud مثل البريد، وجهات الاتصال، والتقويمات.
 
-## 17. تحرير النصوص بواسطة Siri
-استخدم خاصية تحرير النصوص بواسطة Siri لتحويل صوتك إلى نص. يمكنك تمكينها بالضغط على أيقونة الميكروفون على لوحة المفاتيح والتحدث برسالتك.
+## 6. إعداد Siri والخدمات الأخرى
+1. **Siri**: قم بإعداد Siri للمساعد الصوتي باتباع التعليمات.
+2. **الخدمات الأخرى**: اختر تفعيل أو تعطيل الخدمات مثل الموقع، التحليل، تحديثات iOS التلقائية، وغيرها.
 
-## 18. المكبر
-حوّل جهازك إلى عدسة مكبرة باستخدام ميزة المكبر. يمكنك تمكينها في الإعدادات > التيسير > المكبر والنقر على الزر الجانبي ثلاث مرات لتنشيطها.
+## 7. تخصيص الجهاز
+1. **خلفية الشاشة**: اختر خلفية الشاشة المفضلة.
+2. **التطبيقات**: قم بتنزيل وتثبيت التطبيقات المطلوبة من App Store.
+3. **الإعدادات الأخرى**: استكشاف إعدادات أخرى مثل الإشعارات، عدم الإزعاج، والشاشة والسطوع.
 
-## 19. تقليل استخدام البيانات
-حدد استخدام البيانات الخلفية وتوفير البيانات الخلوية عن طريق تمكين وضع البيانات المنخفضة في الإعدادات > الخلوي أو عن طريق تقييد وصول التطبيقات إلى البيانات الخلوية.
+## 8. إعداد البريد الإلكتروني والحسابات
+1. **البريد الإلكتروني**: قم بإعداد حسابات البريد الإلكتروني عبر الذهاب إلى **الإعدادات > البريد > الحسابات > إضافة حساب**.
+2. **الحسابات الأخرى**: أضف حسابات أخرى مثل Google، Facebook، أو Microsoft.
 
-## 20. تطبيق Apple Photos
-نظم وحرّر صورك باستخدام تطبيق Apple Photos المدمج. يمكنك إنشاء البومات وتطبيق الفلاتر ومشاركة ذكرياتك مع الأصدقاء والعائلة.
+## 9. النسخ الاحتياطي والمزامنة
+1. **iCloud Backup**: تأكد من تفعيل النسخ الاحتياطي على iCloud عبر الذهاب إلى **الإعدادات > [اسمك] > iCloud > النسخ الاحتياطي على iCloud**.
+2. **iTunes Backup**: يمكنك أيضًا إنشاء نسخ احتياطية عبر iTunes إذا كنت تفضل ذلك.
 
+## 10. استكشاف الميزات والتعرف عليها
+1. **الميزات الجديدة**: استكشاف الميزات الجديدة لنظام iOS.
+2. **دليل المستخدم**: يمكنك زيارة موقع Apple على الويب أو استخدام تطبيق "Tips" للحصول على إرشادات إضافية.
+
+## الخاتمة
+باتباع هذه الخطوات، يجب أن يكون جهاز iOS الجديد لجدك مجهزًا بشكل جيد وآمن ومخصص لاحتياجاته. إذا واجه أي مشكلات، يمكن العثور على العديد من الحلول من خلال مساعدة Apple المدمجة أو البحث عبر الإنترنت. استمتع بالجهاز الجديد!
 """)
 
 if selected == 'Android' and st.session_state.language == 'English':

@@ -38,6 +38,7 @@ with st.sidebar:
 
     with st.expander("Languages / اللغة"):
         st.session_state.language = st.radio('Choose Language / اختر لغة', options=['English', 'عربي'])
+        index = 0 if st.session_state.language == 'English' else 1
         if st.session_state.language == 'English':
             del_button = "New Question"
         else:
