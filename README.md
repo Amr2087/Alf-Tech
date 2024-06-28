@@ -47,6 +47,4 @@ We welcome contributions from the community! If you'd like to contribute to Alf-
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
-```
 
-Feel free to copy and use this Markdown template for your README.md file in the Alf-Tech repository!
