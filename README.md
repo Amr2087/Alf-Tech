@@ -1,6 +1,6 @@
 Certainly! Here's your README written in Markdown format:
 
-```markdown
+
 # Alf-Tech
 
 ## Table of Contents
