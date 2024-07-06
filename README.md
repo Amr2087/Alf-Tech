@@ -1,6 +1,3 @@
-Certainly! Here's your README written in Markdown format:
-
-
 # Alf-Tech
 
 ## Table of Contents
